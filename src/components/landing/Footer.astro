@@ -1,90 +1,77 @@
-<footer
-  class="grid grid-cols-1 lg:grid-cols-2 gap-2 max-w-7xl mx-auto col-span-full"
->
+<footer class="grid grid-cols-1 lg:grid-cols-2 gap-2 max-w-7xl mx-auto col-span-full">
   <div class="grid grid-cols-1 lg:grid-cols-2 gap-2">
     <div class="p-8 bg-gray-200 rounded-3xl">
-      <h3 class="  font-display text-orange-600 text-base lg:text-xl">Navigation</h3>
-      <ul
-        role="list"
-        class="mt-4 text-xs flex flex-col gap-2 lg:flex-row text-gray-500 uppercase"
-      >
+      <h3 class="font-display text-orange-600 text-base lg:text-xl underline">Navigation</h3>
+      <ul role="list" class="mt-4 text-xs flex flex-col gap-2 lg:flex-row text-gray-500 uppercase">
         <li>
-          <a href="#work" class="hover:text-black"> Work</a>
+          <a href="/" class="hover:text-black">Home</a>
         </li>
         <li>
-          <a href="#how" class="hover:text-black"> How it works</a>
+          <a href="allprojects" class="hover:text-black">Projects</a>
         </li>
         <li>
-          <a href="#pricing" class="hover:text-black"> Pricing</a>
+          <a href="resume" class="hover:text-black">Resume</a>
         </li>
         <li>
-          <a href="#faq" class="hover:text-black"> FAQ</a>
+          <a href="/#contact" class="hover:text-black">Contact</a>
         </li>
       </ul>
     </div>
+
     <div class="p-8 bg-gray-200 rounded-3xl">
-      <h3 class="  font-display text-blue-500 text-base lg:text-xl">Other projects</h3>
-      <ul
-        role="list"
-        class="mt-4 text-xs flex flex-col gap-2 lg:flex-row text-gray-500 uppercase"
-      >
-        <li>
-          <a href="https://www.lexingtonthemes.com" class="hover:text-black">
-            Lexington Themes.
+      <h3 class="font-display text-amber-500 text-base lg:text-xl underline">Socials</h3>
+      <ul role="list" class="mt-4 text-xs flex flex-col gap-2 text-gray-500 uppercase">
+        <li style="display: flex; flex-direction: row;">
+          <svg style="width: 20px; height:20px; margin-right: 10px;" viewBox="0 0 128 128">
+            <path fill="#111111" d="M116 3H12a8.91 8.91 0 00-9 8.8v104.42a8.91 8.91 0 009 8.78h104a8.93 8.93 0 009-8.81V11.77A8.93 8.93 0 00116 3z"></path><path fill="#fff" d="M21.06 48.73h18.11V107H21.06zm9.06-29a10.5 10.5 0 11-10.5 10.49 10.5 10.5 0 0110.5-10.49M50.53 48.73h17.36v8h.24c2.42-4.58 8.32-9.41 17.13-9.41C103.6 47.28 107 59.35 107 75v32H88.89V78.65c0-6.75-.12-15.44-9.41-15.44s-10.87 7.36-10.87 15V107H50.53z"></path>
+            </svg>
+          <a 
+            href="https://www.linkedin.com/in/mayurpatel18/" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="hover:text-black">
+            LinkedIn
           </a>
         </li>
-      </ul>
-    </div>
-    <div class="p-8 bg-gray-200 rounded-3xl">
-      <h3 class="  font-display text-green-500 text-base lg:text-xl">Resources</h3>
-      <ul
-        role="list"
-        class="mt-4 text-xs flex flex-col gap-2 lg:flex-row text-gray-500 uppercase"
-      >
-        <li>
-          <a href="#_" class="hover:text-black"> Breeew</a>
+        <li style="display: flex; flex-direction: row;">
+          <svg style="width: 20px; height:20px; margin-right: 10px;" viewBox="0 0 128 128">
+            <g fill="#181616"><path fill-rule="evenodd" clip-rule="evenodd" d="M64 5.103c-33.347 0-60.388 27.035-60.388 60.388 0 26.682 17.303 49.317 41.297 57.303 3.017.56 4.125-1.31 4.125-2.905 0-1.44-.056-6.197-.082-11.243-16.8 3.653-20.345-7.125-20.345-7.125-2.747-6.98-6.705-8.836-6.705-8.836-5.48-3.748.413-3.67.413-3.67 6.063.425 9.257 6.223 9.257 6.223 5.386 9.23 14.127 6.562 17.573 5.02.542-3.903 2.107-6.568 3.834-8.076-13.413-1.525-27.514-6.704-27.514-29.843 0-6.593 2.36-11.98 6.223-16.21-.628-1.52-2.695-7.662.584-15.98 0 0 5.07-1.623 16.61 6.19C53.7 35 58.867 34.327 64 34.304c5.13.023 10.3.694 15.127 2.033 11.526-7.813 16.59-6.19 16.59-6.19 3.287 8.317 1.22 14.46.593 15.98 3.872 4.23 6.215 9.617 6.215 16.21 0 23.194-14.127 28.3-27.574 29.796 2.167 1.874 4.097 5.55 4.097 11.183 0 8.08-.07 14.583-.07 16.572 0 1.607 1.088 3.49 4.148 2.897 23.98-7.994 41.263-30.622 41.263-57.294C124.388 32.14 97.35 5.104 64 5.104z"></path><path d="M26.484 91.806c-.133.3-.605.39-1.035.185-.44-.196-.685-.605-.543-.906.13-.31.603-.395 1.04-.188.44.197.69.61.537.91zm2.446 2.729c-.287.267-.85.143-1.232-.28-.396-.42-.47-.983-.177-1.254.298-.266.844-.14 1.24.28.394.426.472.984.17 1.255zM31.312 98.012c-.37.258-.976.017-1.35-.52-.37-.538-.37-1.183.01-1.44.373-.258.97-.025 1.35.507.368.545.368 1.19-.01 1.452zm3.261 3.361c-.33.365-1.036.267-1.552-.23-.527-.487-.674-1.18-.343-1.544.336-.366 1.045-.264 1.564.23.527.486.686 1.18.333 1.543zm4.5 1.951c-.147.473-.825.688-1.51.486-.683-.207-1.13-.76-.99-1.238.14-.477.823-.7 1.512-.485.683.206 1.13.756.988 1.237zm4.943.361c.017.498-.563.91-1.28.92-.723.017-1.308-.387-1.315-.877 0-.503.568-.91 1.29-.924.717-.013 1.306.387 1.306.88zm4.598-.782c.086.485-.413.984-1.126 1.117-.7.13-1.35-.172-1.44-.653-.086-.498.422-.997 1.122-1.126.714-.123 1.354.17 1.444.663zm0 0"></path></g>
+            </svg>
+          <a 
+            href="https://github.com/Phaz0r18" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="hover:text-black">
+            GitHub
+          </a>
         </li>
-        <li>
-          <a href="#_" class="hover:text-black"> Stripe</a>
-        </li>
-      </ul>
-    </div>
-    <div class="p-8 bg-gray-200 rounded-3xl">
-      <h3 class="  font-display text-amber-500 text-base lg:text-xl">Socials</h3>
-      <ul
-        role="list"
-        class="mt-4 text-xs flex flex-col gap-2 lg:flex-row text-gray-500 uppercase"
-      >
-        <li>
-          <a href="https://twitter.com/Mike_Andreuzza" class="hover:text-black">
-            @Mike_Andreuzza
+        <li style="display: flex; flex-direction: row;">
+          <svg style="width: 20px; height:20px; margin-right: 10px;" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 461.001 461.001" xml:space="preserve" fill="#000000" stroke="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path style="fill:#000000;" d="M365.257,67.393H95.744C42.866,67.393,0,110.259,0,163.137v134.728 c0,52.878,42.866,95.744,95.744,95.744h269.513c52.878,0,95.744-42.866,95.744-95.744V163.137 C461.001,110.259,418.135,67.393,365.257,67.393z M300.506,237.056l-126.06,60.123c-3.359,1.602-7.239-0.847-7.239-4.568V168.607 c0-3.774,3.982-6.22,7.348-4.514l126.06,63.881C304.363,229.873,304.298,235.248,300.506,237.056z"></path> </g> </g></svg>
+          <a 
+            href="https://www.youtube.com/channel/UCjai6nMcLELE4K_HUOA1x7A" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="hover:text-black">
+            YouTube
           </a>
         </li>
       </ul>
     </div>
   </div>
 
-  <div class="p-8 bg-gray-200 rounded-3xl justify-end flex flex-col">
+  <div class="p-8 bg-gray-900 rounded-3xl justify-center flex flex-col w-full">
     <div>
-      <p class="text-sm text-black">
-        © 2023 Gurido Design. All rights reserved
+      <p class="text-sm text-white">
+        By Mayur Patel; last updated June 2024.
       </p>
-
-      <div class="gap-x-8 gap-y-6 mt-6">
-        <div>
-          <p class="text-sm text-gray-600 lg:col-span-2">
-            Gurido is not affiliated with Stripe, Breeew, Astro, or Tailwind
-            Labs, nor is it endorsed or sponsored by them. Designed and built by
-            <a
-              href="https://michaelandreuzza.com/"
-              class="text-sm text-black hover:text-accent-300"
-              >Michael Andreuzza</a
-            >, this website was crafted using Astro & Tailwind CSS. Crafted in
-            Åland Islands, Finland.
-          </p>
-        </div>
-      </div>
+      <br>
+      <p class="text-sm text-white">
+        Crafted with ♥️ using Astro, TailwindCSS & DaisyUI.
+      </p>
+      <br>
+      <p class="text-sm text-white">
+        Thank you for taking the time to visit!
+      </p>
     </div>
   </div>
-
 </footer>

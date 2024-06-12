@@ -70,14 +70,103 @@ module.exports = {
         "6xl": "5rem",
       },
       fontFamily: {
-        display: ["Comico", ...defaultTheme.fontFamily.sans],
+        display: ["Monospace", ...defaultTheme.fontFamily.sans],
         sans: ["Switzer", ...defaultTheme.fontFamily.sans],
       },
+      /*FOR THE STARS & METEOR EFFECTS */
+      rotate: {
+        "45": "45deg",
+        "135": "135deg",
+        "225": "225deg",
+        "315": "315deg",
+      },
+      animation: {
+        twinkle: "twinkle 2s ease-in-out forwards",
+        meteor: "meteor 3s ease-in-out forwards",
+        'fade-up': 'fade-up 700ms ease 300ms',
+				'fade-in': 'fade-in 700ms ease 300ms',
+				'zoom-in': 'zoom-in 500ms ease 300ms',
+				'zoom-in-out': 'zoom-in-out 700ms ease',
+      },
+      keyframes: {
+        twinkle: {
+          "0%": { 
+            opacity: 0, 
+            transform: "rotate(0deg)" 
+          },
+          "50%": { 
+            opacity: 1,
+            transform: "rotate(180deg)" 
+          },
+          "100%": { 
+            opacity: 0, 
+            transform: "rotate(360deg)" 
+          },
+        },
+        meteor: {
+          "0%": { 
+            opacity: 0, 
+            transform: "translateY(200%)" 
+          },
+          "50%": { 
+            opacity: 1  
+          },
+          "100%": { 
+            opacity: 0, 
+            transform: "translateY(0)" 
+          },
+        },
+        'zoom-in': {
+					'0%': {
+						opacity: 0,
+						transform: 'scale(0.75)',
+					},
+					'100%': {
+						opacity: 1,
+						transform: 'scale(1)',
+					},
+				},
+				'zoom-in-out': {
+					'0%': {
+						transform: 'scale(1.1)',
+					},
+					'100%': {
+						transform: 'scale(1)',
+					},
+				},
+				'fade-up': {
+					from: {
+						opacity: 0,
+						transform: 'translateY(1.5rem)',
+					},
+					to: {
+						opacity: 1,
+						transform: 'none',
+					},
+				},
+				'fade-in': {
+					from: {
+						opacity: 0,
+					},
+					to: {
+						opacity: 1,
+					},
+				},
+      },
+      /*FOR THE SCROLLING SQUARE FLOOR ANIMATED BACKGROUND HEADER */
+      backgroundImage: {
+				horizonAnimated: "url('assets/svg/backgrounds/horizon-animated.svg')",
+				horizon: "url('assets/svg/backgrounds/horizon.svg')",
+			},
     },
   },
   plugins: [
-    require("@tailwindcss/forms"),
+    /*require("@tailwindcss/forms"),*/
     require("@tailwindcss/typography"),
     require("tailwind-scrollbar-hide"),
+    require('daisyui'),
   ],
+  daisyui: {
+    themes: ['light'],
+  },
 };

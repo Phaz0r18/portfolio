@@ -9,7 +9,7 @@
           <a
             class="text-white hover:text-white/50 gap-4 items-center tracking-tighter inline-flex font-medium ml-2 text-xl"
             href="/">
-            Gurido</a
+            &lt;Mayur&gt;</a
           ><button
             @click="open = !open"
             class="inline-flex items-center justify-center p-2 text-white hover:text-cyan-300 focus:outline-none focus:text-white md:hidden"
@@ -43,45 +43,84 @@
 
             <li>
               <a
-                href="#work"
+                href="allprojects"
                 class="hover:text-white shrink-0">
-                Work</a
+                Projects</a
               >
             </li>
             <li>
               <a
-                href="#how"
+                href="resume"
                 class="hover:text-white shrink-0">
-                How it works</a
+                Resume</a
               >
             </li>
+            <!-- <li>
+              <a
+                href=""
+                class="text-gray-400 hover:text-black shrink-0">
+                Blog</a
+              >
+            </li> -->
             <li>
               <a
-                href="#pricing"
+                href="/#contact"
                 class="hover:text-white shrink-0">
-                Plans</a
-              >
-            </li><li>
-              <a
-                href="#faq"
-                class="hover:text-white shrink-0">
-                Faq</a>
-            </li><li>
+                Socials</a>
+            </li>
+            <!-- <li>
                 <a
                   href="https://lexingtonthemes.com/"
                   class="hover:text-white shrink-0">
                   More Templates</a
                 >
-              </li><li class="shrink-0">
+              </li> -->
+              <li class="shrink-0">
               <a
-                href="https://github.com/michael-andreuzza/gurido"
-                class="py-2 w-auto px-4 border-2 h-8 lg:h-10 lg:px-6 focus:ring-2 rounded-lg border-white bg-white hover:bg-transparent text-black duration-200 focus:ring-offset-2 hover:text-white inline-flex items-center justify-center ring-2 focus:ring-black ring-transparent">
-                Github</a
-              >
+                href="mailto:mayurpatelthewebsite@gmail.co.uk"
+                class="py-2 w-auto px-4 border-2 h-8 lg:h-10 lg:px-6 focus:ring-2 rounded-lg border-white bg-black hover:bg-white text-white duration-200 focus:ring-offset-2 hover:text-black inline-flex items-center justify-center ring-2 focus:ring-white ring-transparent">
+                E-mail
+              </a>
             </li>
           </ul>
         </nav>
+
+      <!-- Scroll-to-top button -->
+      <button id="scroll-to-top" onclick="scrollToTop()"
+              class="scroll-to-top ml-5
+                    rounded bg-black
+                    hidden
+                    ">
+              <img src= "assets/images/arrow-140-512.png"
+                  class="hidden w-[44px] h-[44px] rounded-xl py-2 bg-orange-400 hover:bg-black sm:hidden md:block lg:block" alt="TOP">
+      </button>
       </div>
+
+      <!-- OUTSIDE NAV BAR -->
+
     </div>
   </div>
 </div>
+
+<!-- JavaScript to handle scrolling -->
+<script is:inline>
+  const scrollToTopButton = 
+        document.getElementById('scroll-to-top');
+
+  // Show button when user scrolls down
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 100) {
+        scrollToTopButton.style.display = 'block';
+    } else {
+        scrollToTopButton.style.display = 'none';
+    }
+  });
+
+  // Smooth scroll to top
+  function scrollToTop() {
+      window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+      });
+  }              
+</script>
