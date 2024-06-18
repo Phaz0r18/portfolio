@@ -155,8 +155,8 @@ module.exports = {
       },
       /*FOR THE SCROLLING SQUARE FLOOR ANIMATED BACKGROUND HEADER */
       backgroundImage: {
-				horizonAnimated: "url('assets/svg/backgrounds/horizon-animated.svg')",
-				horizon: "url('assets/svg/backgrounds/horizon.svg')",
+				horizonAnimated: "url('/horizon-animated.svg')",
+				horizon: "url('/horizon.svg')",
 			},
     },
   },
